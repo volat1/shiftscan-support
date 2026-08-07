@@ -80,9 +80,26 @@ purchase_started · purchase_completed · purchase_cancelled · share_flow_shown
 share_flow_completed</code>
 </div>
 <p>These are counts only. No shift times, no dates, no names, no image data, and no free text is
-attached to them. Alongside them, TelemetryDeck sends your device model and app version, so we
-can tell whether a problem affects one iPhone or one release. TelemetryDeck does not build user
-profiles and does not use advertising identifiers.</p>
+attached to them.</p>
+
+<p>Every event also carries technical details about your device and the app, so we can tell
+whether a problem affects one iPhone model, one iOS version, or one release:</p>
+<ul>
+  <li>iPhone model, processor architecture, screen size, screen scale, and orientation</li>
+  <li>iOS version, ShiftScan version, and build number</li>
+  <li>The language, region, and time zone set on your device</li>
+  <li>Light or dark appearance, and layout direction</li>
+  <li>Whether the app came from the App Store, TestFlight, or a simulator</li>
+  <li>A session number, which groups the events from one use of the app</li>
+</ul>
+
+<p>Each event also carries a device identifier. It is the identifier iOS gives ShiftScan for
+your device, put through a one-way hash with a secret value before it is sent. It identifies the
+device, not you. It carries no name, no email address, and no Apple ID, it cannot be reversed,
+and iOS gives a different one to every app. Its only purpose is to tell whether ten events came
+from one phone or from ten.</p>
+
+<p>TelemetryDeck does not build user profiles and does not use advertising identifiers.</p>
 
 <p><strong>2. Purchase status.</strong> If you subscribe, RevenueCat processes the purchase and
 tells the app whether your subscription is active. Apple handles the payment itself, and we
@@ -116,9 +133,9 @@ data for us to export, correct, or delete. Deleting the app removes your schedul
 rules from your device. Shifts already written to your calendar stay there. They are your
 calendar's events, and you can delete them yourself at any time.</p>
 <p>There is currently no switch inside the app to turn off the anonymous usage counts described
-above. They contain no schedule content and no identifier that points back to you. We would
-rather state that limitation plainly than imply a control that does not exist. Deleting the app
-stops them.</p>
+above. They contain no schedule content, and the device identifier they carry cannot be traced
+back to you. We would rather state that limitation plainly than imply a control that does not
+exist. Deleting the app stops them.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the date at the top changes with it. Material changes are noted in

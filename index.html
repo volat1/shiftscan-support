@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShiftScan Support</title>
+<meta name="description" content="Support and privacy information for ShiftScan, the shift work calendar app for iPhone.">
+<style>
+  :root {
+    --bg: #F7F5F0; --card: #FDFBF6; --text: #23282E; --muted: #6E6A61;
+    --dim: #8A867C; --accent: #3C7A6B; --line: rgba(42,35,32,.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0F14; --card: #131A21; --text: #E8EAE5; --muted: #9AA3AE;
+      --dim: #5B6472; --accent: #5FA891; --line: rgba(91,100,114,.22);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding: 3.5rem 1.5rem 5rem; }
+  h1 { font-size: 2rem; letter-spacing: -.02em; margin: 0 0 .4rem; }
+  h2 { font-size: 1.1rem; letter-spacing: -.01em; margin: 2.75rem 0 .6rem; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .3rem; }
+  p, li { color: var(--muted); }
+  p { margin: 0 0 1rem; }
+  .lede { font-size: 1.1rem; color: var(--muted); margin-bottom: 2.5rem; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  ul { padding-left: 1.1rem; margin: 0 0 1rem; }
+  li { margin-bottom: .4rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.25rem 1.4rem; margin: 1rem 0;
+  }
+  .plans { list-style: none; padding: 0; margin: .5rem 0 1rem; }
+  .plans li {
+    display: flex; justify-content: space-between; gap: 1rem;
+    padding: .7rem 0; border-bottom: 1px solid var(--line); color: var(--text);
+  }
+  .plans li:last-child { border-bottom: 0; }
+  .plans .price { color: var(--muted); white-space: nowrap; }
+  footer {
+    margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+    font-size: .9rem; color: var(--dim);
+  }
+  footer a { color: var(--dim); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>ShiftScan</h1>
+<p class="lede">Photograph your posted work schedule. Your shifts go into your calendar, with a
+wake alarm before each one.</p>
+
+<p>Everything runs on your iPhone. There is no account, no sign-up, and your schedule never
+leaves the device.</p>
+
+<h2>Get help</h2>
+<p>Email <a href="mailto:contact@newlifefhs.com">contact@newlifefhs.com</a> and describe what happened. It helps
+to include your iPhone model, your iOS version, and what you expected to see.</p>
+<div class="card">
+<p style="margin:0"><strong>Please do not send a photo of a real schedule.</strong> It usually
+carries your colleagues' names. Describe the layout instead, or cover the names first.</p>
+</div>
+
+<h2>Common questions</h2>
+
+<h3>A schedule would not read</h3>
+<p>ShiftScan handles some layouts better than others, and a photo of paper is harder to read
+than a screenshot. If your schedule is available on a screen, use a screenshot. Get the whole
+grid in frame. If the app still refuses, it is telling you it could not read the sheet rather
+than guessing. It will not write shifts it is unsure about.</p>
+
+<h3>My alarm did not ring through Silent</h3>
+<p>Alarms ring through Silent and Focus only after you grant Alarm access. The app asks for it
+the first time you set an alarm rule. Without that permission, alarms follow your ringer
+settings. The alarm screen tells you which of the two you are in.</p>
+
+<h3>Shifts landed on the wrong dates</h3>
+<p>Open the Dates sheet on the Review screen before you confirm. If your schedule does not print
+a year, ShiftScan works one out from the printed weekdays, and it tells you when the result lands
+further away than a posted schedule usually does.</p>
+
+<h3>How do I change which row is mine?</h3>
+<p>Your row is picked on each scan and shown on the Review screen. Tap a different row to change
+it before you confirm.</p>
+
+<h2>ShiftScan Pro</h2>
+<p>Scanning a schedule, correcting it, and adding shifts to your calendar are free and
+unlimited. ShiftScan Pro adds the alarm rule, and lets you track a second job or a rotating
+pattern at the same time.</p>
+
+<ul class="plans">
+  <li><span>Monthly</span><span class="price">$2.99 per month</span></li>
+  <li><span>Annual</span><span class="price">$7.99 per year, first week free</span></li>
+</ul>
+
+<p>Prices shown are for the United States. The App Store shows your local price before you buy.
+A subscription renews automatically at the end of each period unless you cancel at least 24
+hours before that period ends. Payment is charged to your Apple account.</p>
+
+<p><strong>To cancel:</strong> open Settings on your iPhone, tap your name, tap Subscriptions,
+choose ShiftScan, then tap Cancel Subscription. Cancelling stops the next renewal. The period
+you already paid for runs to its end.</p>
+
+<footer>
+<p><a href="privacy/">Privacy policy</a> &nbsp;·&nbsp;
+<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use</a></p>
+</footer>
+
+</div>
+</body>
+</html>
